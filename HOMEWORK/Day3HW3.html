@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - The Artisan Bakery</title>
+</head>
+<body>
+
+    <!-- Main Heading -->
+    <h1>Contact Us - "We're all ears!"</h1>
+
+    <p>We'd love to hear from you! Please fill out the form below.</p>
+
+    <hr>
+
+    <!-- 
+      This is the contact form. 
+      The 'action' attribute is a placeholder; it tells the browser where to send the data.
+      The 'method' attribute specifies how to send the data.
+    -->
+    <form action="#" method="POST">
+        
+        <!-- 1. Name Field -->
+        <!-- We wrap each field in a <p> tag to keep it separate and on a new line. -->
+        <p>
+            <label for="name">Your Name:</label>
+            <br>
+            <input 
+                type="text" 
+                id="name" 
+                name="customer_name" 
+                placeholder="e.g., Jane Doe" 
+                required 
+                maxlength="100">
+        </p>
+
+        <!-- 2. Email Field -->
+        <p>
+            <label for="email">Your Email:</label>
+            <br>
+            <input 
+                type="email" 
+                id="email" 
+                name="customer_email" 
+                placeholder="you@example.com" 
+                required>
+        </p>
+
+        <!-- 3. Phone Number Field -->
+        <p>
+            <label for="phone">Phone Number (Optional):</label>
+            <br>
+            <input 
+                type="tel" 
+                id="phone" 
+                name="customer_phone" 
+                placeholder="(555) 123-4567" 
+                pattern="[0-9() -]{10,15}">
+                <!-- The 'pattern' attribute helps validate the phone number format -->
+        </p>
+
+        <!-- 4. Subject Field -->
+        <p>
+            <label for="subject">Subject:</label>
+            <br>
+            <input 
+                type="text" 
+                id="subject" 
+                name="subject" 
+                placeholder="Question about an order"
+                maxlength="150">
+        </p>
+
+        <!-- 5. Message Field -->
+        <p>
+            <label for="message">Your Message:</label>
+            <br>
+            <textarea 
+                id="message" 
+                name="customer_message" 
+                rows="8" 
+                cols="50" 
+                placeholder="Write your message here..."
+                required></textarea>
+        </p>
+
+        <!-- 6. Submit Button -->
+        <p>
+            <button type="submit">Send Message</button>
+        </p>
+
+    </form>
+
+    <hr>
+
+    <!-- Footer with the copyright HTML entity -->
+    <footer>
+        <p>&copy; 2025 The Local Bakery. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+
